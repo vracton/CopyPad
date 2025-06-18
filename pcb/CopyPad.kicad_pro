@@ -486,10 +486,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/vract/OneDrive/Documents/CopyPadGit/production/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "CopyPad.step",
       "svg": "",
       "vrml": ""
     },
