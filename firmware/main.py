@@ -37,19 +37,22 @@ def onXPress(key, keyboard, *args):
     global current_action
     current_action = "Cut"
     keyboard.modules[1].update_display()
-    return True
+    keyboard.tap_key(KC.LCTRL(KC.X))
+    return False
 
 def onCPress(key, keyboard, *args):
     global current_action
     current_action = "Copied"
     keyboard.modules[1].update_display()
-    return True
+    keyboard.tap_key(KC.LCTRL(KC.C))
+    return False
 
 def onVPress(key, keyboard, *args):
     global current_action
     current_action = "Pasted"
     keyboard.modules[1].update_display()
-    return True
+    keyboard.tap_key(KC.LCTRL(KC.V))
+    return False
 
 oled.reactions = [OledReaction(OledReactionType.ON_BOOT, draw_oled)]
 oled.display_mode = OledDisplayMode.MANUAL
